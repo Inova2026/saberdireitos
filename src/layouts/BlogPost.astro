@@ -1,0 +1,53 @@
+---
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
+import "../styles/global.css";
+
+const { title, date, category, image } = Astro.props;
+---
+
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title} | Saber Direitos</title>
+  </head>
+  <body
+    class="bg-slate-50 text-slate-800 font-sans antialiased flex flex-col min-h-screen"
+  >
+    <Header />
+
+    <main class="max-w-3xl mx-auto px-4 sm:px-6 py-8 flex-grow w-full">
+      <header class="mb-8">
+        <span class="text-sm font-bold text-blue-600 uppercase tracking-wider"
+          >{category}</span
+        >
+        <h1
+          class="text-3xl sm:text-4xl font-extrabold leading-tight mt-2 mb-4 text-slate-900"
+        >
+          {title}
+        </h1>
+        <time class="text-sm text-slate-500">{date}</time>
+      </header>
+
+      {
+        image && (
+          <img
+            src={image}
+            alt={title}
+            class="w-full h-auto rounded-xl shadow-sm mb-8 object-cover aspect-video"
+          />
+        )
+      }
+
+      <!-- Aqui é onde o texto do Markdown gerado pela IA vai entrar -->
+      <article
+        class="prose prose-lg prose-slate max-w-none prose-p:leading-relaxed prose-headings:font-bold prose-a:text-blue-600"
+      >
+        <slot />
+      </article>
+    </main>
+
+    <Footer />
+  </body>
+</html>

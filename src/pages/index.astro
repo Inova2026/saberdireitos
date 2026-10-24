@@ -1,0 +1,64 @@
+---
+import { getCollection } from "astro:content";
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
+import NewsListing from "../components/NewsListing.astro";
+
+const posts = await getCollection("blog");
+const pageSize = 8;
+---
+
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <title>Saber Direitos - Notícias para o Trabalhador</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        margin: 0;
+        font-family: system-ui, sans-serif;
+        background-color: #f8fafc;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+      main {
+        max-width: 1200px;
+        margin: 2rem auto;
+        padding: 0 20px;
+        flex-grow: 1;
+        width: 100%;
+        box-sizing: border-box;
+      }
+      .aviso-erro {
+        background: #fee2e2;
+        color: #991b1b;
+        padding: 1.5rem;
+        border-radius: 8px;
+        margin-bottom: 2rem;
+        font-weight: bold;
+        text-align: center;
+        border: 2px solid #ef4444;
+      }
+      .aviso-sucesso {
+        background: #dcfce3;
+        color: #166534;
+        padding: 1.5rem;
+        border-radius: 8px;
+        margin-bottom: 2rem;
+        font-weight: bold;
+        text-align: center;
+        border: 2px solid #22c55e;
+      }
+    </style>
+  </head>
+  <body>
+    <Header />
+    <main>
+      <h1 style="text-align: center; margin-bottom: 2rem;">Últimas Notícias</h1>
+
+      <NewsListing posts={posts.slice(0, pageSize)} currentPage={1} totalPages={Math.ceil(posts.length / pageSize)} />
+    </main>
+    <Footer />
+  </body>
+</html>

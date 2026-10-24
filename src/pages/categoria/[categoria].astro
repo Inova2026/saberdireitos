@@ -1,0 +1,70 @@
+---
+import { getCollection } from 'astro:content';
+import Header from '../../components/Header.astro';
+
+// O Astro usa esta função para criar as páginas de categoria antecipadamente
+export async function getStaticPaths() {
+  const todasNoticias = await getCollection('blog');
+  
+  const categoriasUnicas = [...new Set([
+    'inss',
+    'fgts',
+    ...todasNoticias.map((post) => post.data.category.toLowerCase()),
+  ])];
+  
+  // Cria uma rota para cada categoria encontrada
+  return categoriasUnicas.map((categoria) => {
+    const noticiasFiltradas = todasNoticias.filter(
+      (post) => post.data.category.toLowerCase() === categoria
+    );
+    return {
+      params: { categoria },
+      props: { posts: noticiasFiltradas },
+    };
+  });
+}
+
+const { categoria } = Astro.params;
+const { posts } = Astro.props;
+---
+
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <title>{categoria.toUpperCase()} - Saber Direitos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body { margin: 0; font-family: system-ui, sans-serif; background-color: #f8fafc; }
+      main { max-width: 1200px; margin: 2rem auto; padding: 0 20px; }
+      h1 { color: #1e293b; text-transform: capitalize; }
+      .noticias-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 2rem; margin-top: 2rem; }
+      .cartao-noticia { background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1); text-decoration: none; color: inherit; transition: transform 0.2s;}
+      .cartao-noticia:hover { transform: translateY(-5px); }
+      .cartao-noticia img { width: 100%; height: 200px; object-fit: cover; }
+      .cartao-conteudo { padding: 1.5rem; }
+      .cartao-titulo { font-size: 1.25rem; margin: 0 0 0.5rem 0; color: #0f172a; }
+      .cartao-resumo { color: #64748b; font-size: 0.9rem; line-height: 1.5; }
+    </style>
+  </head>
+  <body>
+    <Header />
+    
+    <main>
+      <h1>Notícias sobre {categoria}</h1>
+      
+      <div class="noticias-grid">
+        {posts.map((post) => (
+          <a href={`/blog/${post.slug}`} class="cartao-noticia">
+            <img src={post.data.image} alt={post.data.title} />
+            <div class="cartao-conteudo">
+              <h2 class="cartao-titulo">{post.data.title}</h2>
+              <p class="cartao-resumo">{post.data.excerpt}</p>
+            </div>
+          </a>
+        ))}
+      </div>
+
+      {posts.length === 0 && <p>Ainda não há notícias nesta categoria.</p>}
+    </main>
+  </body>
+</html>

@@ -1,0 +1,67 @@
+---
+import { getCollection } from "astro:content";
+import Footer from "../../components/Footer.astro";
+import Header from "../../components/Header.astro";
+import NewsListing from "../../components/NewsListing.astro";
+
+export async function getStaticPaths() {
+  const pageSize = 8;
+  const posts = await getCollection("blog");
+  const totalPages = Math.ceil(posts.length / pageSize);
+
+  return Array.from({ length: Math.max(0, totalPages - 1) }, (_, index) => {
+    const page = index + 2;
+    const start = (page - 1) * pageSize;
+
+    return {
+      params: { pagina: String(page) },
+      props: {
+        posts: posts.slice(start, start + pageSize),
+        currentPage: page,
+        totalPages,
+      },
+    };
+  });
+}
+
+const { posts, currentPage, totalPages } = Astro.props;
+---
+
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <title>Página {currentPage} - Saber Direitos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <Header />
+    <main>
+      <h1>Últimas Notícias</h1>
+      <NewsListing posts={posts} currentPage={currentPage} totalPages={totalPages} />
+    </main>
+    <Footer />
+  </body>
+</html>
+
+<style>
+  body {
+    margin: 0;
+    font-family: system-ui, sans-serif;
+    background-color: #f8fafc;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 20px;
+    flex-grow: 1;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+</style>

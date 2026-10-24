@@ -1,0 +1,103 @@
+---
+import type { CollectionEntry } from "astro:content";
+
+interface Props {
+  posts: CollectionEntry<"blog">[];
+  currentPage: number;
+  totalPages: number;
+}
+
+const { posts, currentPage, totalPages } = Astro.props;
+const pageUrl = (page: number) => (page === 1 ? "/" : `/pagina/${page}`);
+---
+
+<div class="noticias-grid">
+  {
+    posts.map((post) => (
+      <a href={`/blog/${post.id}`} class="cartao-noticia">
+        <img src={post.data.image} alt={post.data.title} />
+        <div class="cartao-conteudo">
+          <span class="cartao-categoria">{post.data.category}</span>
+          <h2 class="cartao-titulo">{post.data.title}</h2>
+        </div>
+      </a>
+    ))
+  }
+</div>
+
+{
+  totalPages > 1 && (
+    <nav class="paginacao" aria-label="Paginação de notícias">
+      {currentPage > 1 && (
+        <a href={pageUrl(currentPage - 1)} rel="prev">
+          Anterior
+        </a>
+      )}
+      <span>
+        Página {currentPage} de {totalPages}
+      </span>
+      {currentPage < totalPages && (
+        <a href={pageUrl(currentPage + 1)} rel="next">
+          Próxima
+        </a>
+      )}
+    </nav>
+  )
+}
+
+<style>
+  .noticias-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+  .cartao-noticia {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.2s;
+  }
+  .cartao-noticia:hover {
+    transform: translateY(-5px);
+  }
+  .cartao-noticia img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  .cartao-conteudo {
+    padding: 1.5rem;
+  }
+  .cartao-categoria {
+    color: #2563eb;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+    display: block;
+  }
+  .cartao-titulo {
+    font-size: 1.25rem;
+    margin: 0 0 0.5rem 0;
+    color: #0f172a;
+    line-height: 1.3;
+  }
+  .paginacao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+  .paginacao a {
+    color: #2563eb;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  .paginacao a:hover {
+    text-decoration: underline;
+  }
+</style>

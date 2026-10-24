@@ -1,0 +1,114 @@
+---
+import { getCollection, render } from "astro:content";
+import Footer from "../../components/Footer.astro";
+import Header from "../../components/Header.astro";
+
+export async function getStaticPaths() {
+  const posts = await getCollection("blog");
+  return posts.map((post) => ({
+    params: { id: post.id },
+    props: { post },
+  }));
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+---
+
+<html lang="pt-BR">
+  <html lang="pt-BR">
+    <head>
+      <meta charset="utf-8" />
+      <title>{post.data.title} - Saber Direitos</title>
+
+      <!-- Tags essenciais para o Google Discover e SEO -->
+      <meta
+        name="description"
+        content={post.data.description || post.data.excerpt}
+      />
+      <meta name="geo.region" content={post.data.geo_region || "BR"} />
+
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <style>
+        body {
+          margin: 0;
+          font-family: system-ui, sans-serif;
+          background-color: #f8fafc;
+          display: flex;
+          flex-direction: column;
+          min-height: 100vh;
+        }
+        main {
+          max-width: 800px;
+          margin: 2rem auto;
+          padding: 2rem;
+          background: white;
+          border-radius: 8px;
+          box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+          flex-grow: 1;
+          width: 100%;
+          box-sizing: border-box;
+        }
+        .imagem-destaque {
+          width: 100%;
+          height: auto;
+          border-radius: 8px;
+          margin: 1.5rem 0;
+          max-height: 400px;
+          object-fit: cover;
+        }
+        .categoria {
+          color: #2563eb;
+          font-weight: bold;
+          text-transform: uppercase;
+          font-size: 0.9rem;
+        }
+        .data {
+          color: #64748b;
+          font-size: 0.9rem;
+          display: block;
+          margin-top: 0.5rem;
+        }
+        .titulo {
+          font-size: 2.5rem;
+          color: #0f172a;
+          margin: 0.5rem 0;
+          line-height: 1.2;
+        }
+        .conteudo-noticia {
+          line-height: 1.8;
+          font-size: 1.1rem;
+          color: #334155;
+          margin-top: 2rem;
+        }
+        .conteudo-noticia h2,
+        .conteudo-noticia h3 {
+          color: #0f172a;
+          margin-top: 2rem;
+        }
+      </style>
+    </head>
+    <body>
+      <Header />
+
+      <main>
+        <span class="categoria">{post.data.category}</span>
+        <h1 class="titulo">{post.data.title}</h1>
+        <span class="data">Publicado em: {post.data.date}</span>
+
+        <img
+          src={post.data.image}
+          alt={post.data.title}
+          class="imagem-destaque"
+        />
+
+        <!-- É aqui que a magia acontece e o Markdown é impresso -->
+        <div class="conteudo-noticia">
+          <Content />
+        </div>
+      </main>
+
+      <Footer />
+    </body>
+  </html>
+</html>

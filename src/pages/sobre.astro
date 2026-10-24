@@ -1,0 +1,83 @@
+---
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
+---
+
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <title>Sobre Nós - Saber Direitos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        margin: 0;
+        font-family: system-ui, sans-serif;
+        background-color: #f8fafc;
+        color: #334155;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+      main {
+        max-width: 800px;
+        margin: 3rem auto;
+        padding: 0 20px;
+        line-height: 1.6;
+        font-size: 1.1rem;
+        flex-grow: 1;
+      }
+      h1 {
+        color: #1e293b;
+        margin-bottom: 2rem;
+        border-bottom: 2px solid #e2e8f0;
+        padding-bottom: 1rem;
+      }
+      h2 {
+        color: #2563eb;
+        margin-top: 2.5rem;
+        font-size: 1.4rem;
+      }
+    </style>
+  </head>
+  <body>
+    <Header />
+
+    <main>
+      <h1>Sobre o Saber Direitos</h1>
+
+      <p>
+        O <strong>Saber Direitos</strong> nasceu com uma missão clara: traduzir o
+        "juridiquês" e tornar as informações sobre direitos trabalhistas acessíveis,
+        claras e diretas para todos os brasileiros.
+      </p>
+
+      <h2>O nosso Propósito</h2>
+      <p>
+        Acreditamos que a informação é a melhor ferramenta de proteção.
+        Diariamente, as regras do INSS, FGTS e CLT sofrem alterações que
+        impactam diretamente o bolso e o futuro do trabalhador. O nosso objetivo
+        é garantir que você não perca nenhum benefício por falta de
+        conhecimento.
+      </p>
+
+      <h2>Como Trabalhamos</h2>
+      <p>
+        Monitorizamos diariamente as publicações oficiais do Governo Federal,
+        Ministério do Trabalho e da Economia. Os nossos artigos são elaborados
+        com o auxílio de inteligência artificial rigorosamente instruída para
+        focar em factos, mantendo a objetividade e a precisão necessárias em
+        temas jurídicos e financeiros.
+      </p>
+
+      <h2>Independência</h2>
+      <p>
+        O Saber Direitos é um portal de notícias independente. Não possuímos
+        vínculos com o Governo Federal, Caixa Económica, INSS ou qualquer
+        instituição financeira. O nosso compromisso é exclusivamente com a
+        informação de qualidade para o cidadão.
+      </p>
+    </main>
+
+    <Footer />
+  </body>
+</html>

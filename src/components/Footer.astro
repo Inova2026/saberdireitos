@@ -1,0 +1,78 @@
+---
+// src/components/Footer.astro
+const anoAtual = new Date().getFullYear();
+---
+
+<footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-info">
+      <h3>Saber Direitos</h3>
+      <p>Simplificando a informação jurídica para o trabalhador brasileiro.</p>
+    </div>
+    <div class="footer-links">
+      <a href="/sobre">Sobre Nós</a>
+      <a href="/politica-de-privacidade">Política de Privacidade</a>
+      <a href="/contato">Contato</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; {anoAtual} Saber Direitos. Todos os direitos reservados.</p>
+    <p class="cnpj">
+      CNPJ: 52.927.044/0001-65 | Responsável Técnico: Alexandre O. Schindler
+    </p>
+  </div>
+</footer>
+
+<style>
+  .site-footer {
+    background-color: #1e293b;
+    color: #f8fafc;
+    padding: 3rem 0 1rem 0;
+    margin-top: 4rem;
+    font-family: system-ui, sans-serif;
+  }
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  .footer-info h3 {
+    margin: 0 0 1rem 0;
+    color: #60a5fa;
+  }
+  .footer-info p {
+    margin: 0;
+    color: #cbd5e1;
+    max-width: 300px;
+  }
+  .footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+  .footer-links a {
+    color: #cbd5e1;
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  .footer-links a:hover {
+    color: #60a5fa;
+  }
+  .footer-bottom {
+    text-align: center;
+    margin-top: 3rem;
+    padding-top: 1rem;
+    border-top: 1px solid #334155;
+    color: #94a3b8;
+    font-size: 0.9rem;
+  }
+  .cnpj {
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+    color: #64748b;
+  }
+</style>
