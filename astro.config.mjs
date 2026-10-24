@@ -9,7 +9,7 @@ import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "[https://saberdireitos.com.br](https://saberdireitos.com.br)",
+  site: "https://saberdireitos.com.br",
   vite: {
     plugins: [tailwindcss()],
   },
