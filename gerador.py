@@ -3,14 +3,19 @@ import re
 import json
 from datetime import datetime
 import google.generativeai as genai
+from dotenv import load_dotenv
 
-# 1. Configuração da IA
-api_key = os.environ.get("GOOGLE_API_KEY")
-if not api_key:
-    raise RuntimeError("Defina a variável de ambiente GOOGLE_API_KEY para usar o gerador.")
-genai.configure(api_key=api_key)
+# Força o carregamento do ficheiro .env na mesma pasta
+load_dotenv(override=True)
+
+# Vai buscar a chave ao cofre
+chave_api = os.getenv("GOOGLE_API_KEY")
+
+if not chave_api:
+    raise RuntimeError("ERRO: O Python não encontrou a chave no ficheiro .env. Verifique o nome do ficheiro.")
+
+genai.configure(api_key=chave_api)
 modelo = genai.GenerativeModel('gemini-3.8-flash')
-
 # 2. O Prompt que obriga a IA a devolver uma estrutura de dados perfeita (JSON)
 PROMPT_SISTEMA = """
 És um jornalista especialista em Google Discover e SEO Local no Brasil.
