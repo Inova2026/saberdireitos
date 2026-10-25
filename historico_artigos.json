@@ -1,0 +1,62 @@
+{
+  "temas_usados": [
+    "Novas regras de aposentadoria do INSS para 2027",
+    "Saque-aniversário do FGTS: como funciona em 2027",
+    "Assédio moral no trabalho: como denunciar",
+    "Estabilidade da gestante: regras da CLT",
+    "Perícia médica do INSS: como se preparar",
+    "Diferença entre saque-rescisão e saque-aniversário do FGTS"
+  ],
+  "titulos_usados": [
+    "INSS 2027: confira as novas regras para se aposentar",
+    "FGTS em 2027: confira as regras do saque-aniversário",
+    "Assédio moral na CLT: veja como reunir provas e denunciar",
+    "Gravidez no trabalho: veja os direitos e a estabilidade CLT",
+    "Perícia do INSS: saiba como se preparar e evitar recusa",
+    "FGTS: Saque-Aniversário x Rescisão: Veja Qual Escolher"
+  ],
+  "artigos": [
+    {
+      "tema": "Novas regras de aposentadoria do INSS para 2027",
+      "categoria": "INSS",
+      "titulo": "INSS 2027: confira as novas regras para se aposentar",
+      "slug": "inss-2027-confira-as-novas-regras-para-se-aposentar",
+      "data": "2026-10-25 17:33:02"
+    },
+    {
+      "tema": "Saque-aniversário do FGTS: como funciona em 2027",
+      "categoria": "FGTS",
+      "titulo": "FGTS em 2027: confira as regras do saque-aniversário",
+      "slug": "fgts-em-2027-confira-as-regras-do-saque-anivers-rio",
+      "data": "2026-10-25 17:33:30"
+    },
+    {
+      "tema": "Assédio moral no trabalho: como denunciar",
+      "categoria": "Trabalho CLT",
+      "titulo": "Assédio moral na CLT: veja como reunir provas e denunciar",
+      "slug": "ass-dio-moral-na-clt-veja-como-reunir-provas-e-denunciar",
+      "data": "2026-10-25 17:33:59"
+    },
+    {
+      "tema": "Estabilidade da gestante: regras da CLT",
+      "categoria": "Trabalho CLT",
+      "titulo": "Gravidez no trabalho: veja os direitos e a estabilidade CLT",
+      "slug": "gravidez-no-trabalho-veja-os-direitos-e-a-estabilidade-clt",
+      "data": "2026-10-25 17:41:39"
+    },
+    {
+      "tema": "Perícia médica do INSS: como se preparar",
+      "categoria": "INSS",
+      "titulo": "Perícia do INSS: saiba como se preparar e evitar recusa",
+      "slug": "per-cia-do-inss-saiba-como-se-preparar-e-evitar-recusa",
+      "data": "2026-10-25 17:42:14"
+    },
+    {
+      "tema": "Diferença entre saque-rescisão e saque-aniversário do FGTS",
+      "categoria": "FGTS",
+      "titulo": "FGTS: Saque-Aniversário x Rescisão: Veja Qual Escolher",
+      "slug": "fgts-saque-anivers-rio-x-rescis-o-veja-qual-escolher",
+      "data": "2026-10-25 17:42:47"
+    }
+  ]
+}
