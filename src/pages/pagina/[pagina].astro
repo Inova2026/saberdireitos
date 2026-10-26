@@ -5,7 +5,7 @@ import Header from "../../components/Header.astro";
 import NewsListing from "../../components/NewsListing.astro";
 
 export async function getStaticPaths() {
-  const pageSize = 10;
+  const pageSize = 9;
   const posts = await getCollection("blog");
   const totalPages = Math.ceil(posts.length / pageSize);
 
