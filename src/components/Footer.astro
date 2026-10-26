@@ -21,6 +21,49 @@ const anoAtual = new Date().getFullYear();
       CNPJ: 52.927.044/0001-65 | Responsável Técnico: Alexandre O. Schindler
     </p>
   </div>
+  <!-- Aviso de Cookies -->
+  <div
+    id="cookie-banner"
+    class="cookie-banner"
+    role="region"
+    aria-label="Aviso de cookies"
+    hidden
+  >
+    <p>
+      Utilizamos cookies para melhorar a sua experiência e personalizar
+      conteúdo. Ao continuar a navegar, concorda com a nossa
+      <a href="/politica-de-privacidade">Política de Privacidade e Cookies</a>.
+    </p>
+    <button id="aceitar-cookies" type="button">Entendi e Aceito</button>
+  </div>
+
+  <script>
+    const inicializarAvisoDeCookies = () => {
+      const banner = document.getElementById("cookie-banner");
+      const botaoAceitar = document.getElementById("aceitar-cookies");
+
+      if (!banner || !(botaoAceitar instanceof HTMLButtonElement)) {
+        return;
+      }
+
+      if (!localStorage.getItem("cookies_aceitos")) {
+        banner.hidden = false;
+      }
+
+      botaoAceitar.addEventListener("click", () => {
+        localStorage.setItem("cookies_aceitos", "true");
+        banner.hidden = true;
+      });
+    };
+
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", inicializarAvisoDeCookies, {
+        once: true,
+      });
+    } else {
+      inicializarAvisoDeCookies();
+    }
+  </script>
 </footer>
 
 <style>
@@ -74,5 +117,69 @@ const anoAtual = new Date().getFullYear();
     margin-top: 0.5rem;
     font-size: 0.85rem;
     color: #64748b;
+  }
+  .cookie-banner {
+    position: fixed;
+    z-index: 1000;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+    padding: 1rem 1.5rem;
+    border-top: 1px solid #334155;
+    background: #0f172a;
+    color: #e2e8f0;
+    box-shadow: 0 -8px 24px rgb(15 23 42 / 20%);
+  }
+  .cookie-banner[hidden] {
+    display: none;
+  }
+  .cookie-banner p {
+    max-width: 56rem;
+    margin: 0;
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+  .cookie-banner a {
+    color: #93c5fd;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+  .cookie-banner a:hover {
+    color: #bfdbfe;
+  }
+  .cookie-banner button {
+    flex-shrink: 0;
+    padding: 0.7rem 1.25rem;
+    border: 0;
+    border-radius: 0.375rem;
+    background: #2563eb;
+    color: #fff;
+    font: inherit;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  .cookie-banner button:hover {
+    background: #3b82f6;
+  }
+  .cookie-banner button:focus-visible,
+  .cookie-banner a:focus-visible {
+    outline: 2px solid #93c5fd;
+    outline-offset: 3px;
+  }
+  @media (max-width: 640px) {
+    .cookie-banner {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 1rem;
+      padding: 1rem;
+    }
+    .cookie-banner button {
+      align-self: flex-end;
+    }
   }
 </style>
