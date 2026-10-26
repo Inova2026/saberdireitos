@@ -13,9 +13,16 @@ const pageUrl = (page: number) => (page === 1 ? "/" : `/pagina/${page}`);
 
 <div class="noticias-grid">
   {
-    posts.map((post) => (
+    posts.map((post, index) => (
       <a href={`/blog/${post.id}`} class="cartao-noticia">
-        <img src={post.data.image} alt={post.data.title} />
+        <img
+          src={post.data.image}
+          alt={post.data.title}
+          width="800"
+          height="450"
+          loading={index === 0 ? "eager" : "lazy"}
+          fetchpriority={index === 0 ? "high" : "auto"}
+        />
         <div class="cartao-conteudo">
           <span class="cartao-categoria">{post.data.category}</span>
           <h2 class="cartao-titulo">{post.data.title}</h2>
