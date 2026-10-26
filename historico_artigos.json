@@ -5,7 +5,10 @@
     "Assédio moral no trabalho: como denunciar",
     "Estabilidade da gestante: regras da CLT",
     "Perícia médica do INSS: como se preparar",
-    "Diferença entre saque-rescisão e saque-aniversário do FGTS"
+    "Diferença entre saque-rescisão e saque-aniversário do FGTS",
+    "Como sair do saque-aniversário e voltar ao saque-rescisão",
+    "13º salário: regras de pagamento e quem tem direito",
+    "Aposentadoria por invalidez: o que mudou nas regras"
   ],
   "titulos_usados": [
     "INSS 2027: confira as novas regras para se aposentar",
@@ -13,7 +16,10 @@
     "Assédio moral na CLT: veja como reunir provas e denunciar",
     "Gravidez no trabalho: veja os direitos e a estabilidade CLT",
     "Perícia do INSS: saiba como se preparar e evitar recusa",
-    "FGTS: Saque-Aniversário x Rescisão: Veja Qual Escolher"
+    "FGTS: Saque-Aniversário x Rescisão: Veja Qual Escolher",
+    "FGTS: saiba como cancelar o saque-aniversário e prazos",
+    "13º salário: confira as regras e os prazos de pagamento",
+    "Aposentadoria por invalidez: confira as novas regras do INSS"
   ],
   "artigos": [
     {
@@ -57,6 +63,27 @@
       "titulo": "FGTS: Saque-Aniversário x Rescisão: Veja Qual Escolher",
       "slug": "fgts-saque-anivers-rio-x-rescis-o-veja-qual-escolher",
       "data": "2026-10-25 17:42:47"
+    },
+    {
+      "tema": "Como sair do saque-aniversário e voltar ao saque-rescisão",
+      "categoria": "FGTS",
+      "titulo": "FGTS: saiba como cancelar o saque-aniversário e prazos",
+      "slug": "fgts-saiba-como-cancelar-o-saque-anivers-rio-e-prazos",
+      "data": "2026-10-26 00:29:54"
+    },
+    {
+      "tema": "13º salário: regras de pagamento e quem tem direito",
+      "categoria": "Trabalho CLT",
+      "titulo": "13º salário: confira as regras e os prazos de pagamento",
+      "slug": "13-sal-rio-confira-as-regras-e-os-prazos-de-pagamento",
+      "data": "2026-10-26 00:30:27"
+    },
+    {
+      "tema": "Aposentadoria por invalidez: o que mudou nas regras",
+      "categoria": "INSS",
+      "titulo": "Aposentadoria por invalidez: confira as novas regras do INSS",
+      "slug": "aposentadoria-por-invalidez-confira-as-novas-regras-do-inss",
+      "data": "2026-10-26 00:32:08"
     }
   ]
 }
