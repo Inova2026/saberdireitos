@@ -1,100 +1,103 @@
 ---
-// Importe o Layout principal do seu projeto (verifique se a pasta se chama 'layouts')
-import Layout from "../layouts/Layout.astro";
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
+import "../styles/global.css";
 ---
 
-<Layout title="Política de Privacidade | Saber Direitos">
-  <main class="max-w-4xl mx-auto px-4 py-12 text-slate-800">
-    <h1 class="text-3xl font-bold mb-8 text-slate-900">
-      Política de Privacidade e Cookies
-    </h1>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Saiba como o Saber Direitos trata informações pessoais e utiliza cookies."
+    />
+    <title>Política de Privacidade | Saber Direitos</title>
+  </head>
+  <body
+    class="bg-slate-50 text-slate-800 font-sans antialiased flex flex-col min-h-screen"
+  >
+    <Header />
 
-    <p class="mb-4">
-      O portal <strong>Saber Direitos</strong> compromete-se a proteger a sua privacidade.
-      Esta política explica como coletamos, usamos e protegemos as suas informações
-      pessoais quando visita o nosso site, garantindo a conformidade com a Lei Geral
-      de Proteção de Dados (LGPD - Lei nº 13.709/2018).
-    </p>
+    <main class="max-w-4xl mx-auto w-full px-4 sm:px-6 py-8 flex-grow">
+      <article
+        class="prose prose-lg prose-slate max-w-none prose-headings:font-bold prose-a:text-blue-600"
+      >
+        <h1>Política de Privacidade e Cookies</h1>
 
-    <h2 class="text-2xl font-semibold mt-8 mb-4 text-slate-900">
-      1. O que são Cookies?
-    </h2>
-    <p class="mb-4">
-      Cookies são pequenos arquivos de texto armazenados no seu navegador ou
-      dispositivo. Eles ajudam a entender como você interage com o nosso portal,
-      permitindo melhorar a sua experiência de navegação, a velocidade de
-      carregamento e a exibição de conteúdos e anúncios relevantes.
-    </p>
+        <p>
+          O portal <strong>Saber Direitos</strong> compromete-se a proteger a sua
+          privacidade. Esta política explica como coletamos, usamos e protegemos
+          as suas informações pessoais quando visita o nosso site, de acordo com
+          a Lei Geral de Proteção de Dados (LGPD - Lei nº 13.709/2018).
+        </p>
 
-    <h2 class="text-2xl font-semibold mt-8 mb-4 text-slate-900">
-      2. Como Utilizamos os Cookies
-    </h2>
-    <p class="mb-4">
-      Utilizamos cookies estritamente para fins de desempenho (análise de
-      tráfego) e publicidade. Não coletamos dados sensíveis, pessoais ou
-      financeiros, nem identificamos os usuários individualmente sem o
-      consentimento explícito.
-    </p>
+        <h2>1. O que são Cookies?</h2>
+        <p>
+          Cookies são pequenos arquivos de texto armazenados no seu navegador ou
+          dispositivo. Eles ajudam a entender como você interage com o nosso
+          portal, permitindo melhorar a sua experiência de navegação, a
+          velocidade de carregamento e a exibição de conteúdos e anúncios
+          relevantes.
+        </p>
 
-    <h2 class="text-2xl font-semibold mt-8 mb-4 text-slate-900">
-      3. Publicidade e o Google AdSense
-    </h2>
-    <p class="mb-2">
-      O nosso site exibirá anúncios fornecidos pelo Google e pela sua rede de
-      parceiros.
-    </p>
-    <ul class="list-disc pl-6 mb-4">
-      <li class="mb-2">
-        O Google utiliza cookies (como o cookie DART) para exibir anúncios
-        baseados nas suas visitas ao <strong>Saber Direitos</strong> e a outros sites
-        na internet.
-      </li>
-      <li>
-        Os usuários podem desativar o uso do cookie DART acessando a <a
-          href="https://policies.google.com/technologies/ads"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="text-blue-600 hover:underline"
-          >Política de Privacidade da rede de conteúdo e dos anúncios do Google</a
-        >.
-      </li>
-    </ul>
+        <h2>2. Como Utilizamos os Cookies</h2>
+        <p>
+          Utilizamos cookies para fins de desempenho (análise de tráfego) e
+          publicidade. Não solicitamos dados pessoais para a leitura do
+          conteúdo. Caso entre em contato conosco, as informações que você
+          enviar serão tratadas conforme descrito nesta política.
+        </p>
 
-    <h2 class="text-2xl font-semibold mt-8 mb-4 text-slate-900">
-      4. Coleta de Dados e Direitos do Usuário
-    </h2>
-    <p class="mb-4">
-      Sendo um portal de informações jornalísticas e jurídicas, a sua navegação
-      é anônima. Caso decida entrar em contato conosco via e-mail, as
-      informações fornecidas (como nome e endereço de e-mail) serão usadas
-      exclusivamente para responder à sua solicitação.
-    </p>
-    <p class="mb-2">De acordo com a LGPD, você tem o direito de:</p>
-    <ul class="list-disc pl-6 mb-4">
-      <li class="mb-2">
-        Solicitar a exclusão de qualquer dado fornecido voluntariamente.
-      </li>
-      <li>
-        Configurar o seu navegador para recusar todos os cookies ou para indicar
-        quando um cookie está sendo enviado.
-      </li>
-    </ul>
+        <h2>3. Publicidade e o Google AdSense</h2>
+        <p>
+          O nosso site poderá exibir anúncios fornecidos pelo Google e pela sua
+          rede de parceiros. Esses serviços podem utilizar cookies para
+          personalizar anúncios com base nas suas visitas a este e a outros
+          sites.
+        </p>
+        <p>
+          Você pode consultar como o Google utiliza dados e gerenciar as
+          configurações de anúncios na <a
+            href="https://policies.google.com/technologies/ads"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Política de Privacidade da rede de conteúdo e dos anúncios do Google</a
+          >.
+        </p>
 
-    <h2 class="text-2xl font-semibold mt-8 mb-4 text-slate-900">
-      5. Alterações nesta Política
-    </h2>
-    <p class="mb-4">
-      Podemos atualizar esta Política de Privacidade periodicamente para
-      refletir mudanças legais ou operacionais. Recomendamos que revise esta
-      página com regularidade para se manter informado sobre como protegemos a
-      sua privacidade.
-    </p>
+        <h2>4. Coleta de Dados e Direitos do Usuário</h2>
+        <p>
+          Caso decida entrar em contato conosco por e-mail, as informações
+          fornecidas, como nome e endereço de e-mail, serão usadas para
+          responder à sua solicitação.
+        </p>
+        <p>De acordo com a LGPD, você tem o direito de:</p>
+        <ul>
+          <li>Solicitar a exclusão de dados fornecidos voluntariamente.</li>
+          <li>
+            Configurar o seu navegador para recusar cookies ou para avisar
+            quando um cookie estiver sendo enviado.
+          </li>
+        </ul>
 
-    <h2 class="text-2xl font-semibold mt-8 mb-4 text-slate-900">6. Contato</h2>
-    <p class="mb-4">
-      Se tiver dúvidas sobre esta política ou sobre o tratamento dos seus dados,
-      entre em contato através do e-mail: <strong
-        >contato_alexandresilva@hotmal.com</strong>
-    </p>
-  </main>
-</Layout>
+        <h2>5. Alterações nesta Política</h2>
+        <p>
+          Podemos atualizar esta Política de Privacidade periodicamente para
+          refletir mudanças legais ou operacionais. Recomendamos que revise esta
+          página com regularidade.
+        </p>
+
+        <h2>6. Contato</h2>
+        <p>
+          Se tiver dúvidas sobre esta política ou sobre o tratamento dos seus
+          dados, entre em contato através do e-mail: <strong
+            >contato_alexandresilva@hotmal.com</strong
+          >
+        </p>
+      </article>
+    </main>
+
+    <Footer />
+  </body>
+</html>
