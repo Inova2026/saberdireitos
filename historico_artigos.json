@@ -11,7 +11,10 @@
     "Aposentadoria por invalidez: o que mudou nas regras",
     "INSS libera empréstimo consignado com novas condições",
     "FGTS de trabalhador doméstico: como funciona",
-    "Trabalhador sem carteira assinada tem direito a férias?"
+    "Trabalhador sem carteira assinada tem direito a férias?",
+    "Como contestar um benefício negado pelo INSS",
+    "FGTS digital: como usar o saldo para financiar imóvel",
+    "Férias vencidas: o que a empresa é obrigada a pagar"
   ],
   "titulos_usados": [
     "INSS 2027: confira as novas regras para se aposentar",
@@ -25,7 +28,10 @@
     "Aposentadoria por invalidez: confira as novas regras do INSS",
     "INSS muda regras do empréstimo consignado para aposentados",
     "FGTS do doméstico: veja regras e como consultar o saldo",
-    "Trabalhador sem carteira tem direito a férias? Veja regras"
+    "Trabalhador sem carteira tem direito a férias? Veja regras",
+    "INSS negou o benefício? Veja como contestar a decisão",
+    "FGTS Digital: saiba como usar o saldo na compra do imóvel",
+    "Férias vencidas: veja quanto a empresa deve pagar a você"
   ],
   "artigos": [
     {
@@ -111,6 +117,27 @@
       "titulo": "Trabalhador sem carteira tem direito a férias? Veja regras",
       "slug": "trabalhador-sem-carteira-tem-direito-a-f-rias-veja-regras",
       "data": "2026-10-27 12:49:15"
+    },
+    {
+      "tema": "Como contestar um benefício negado pelo INSS",
+      "categoria": "INSS",
+      "titulo": "INSS negou o benefício? Veja como contestar a decisão",
+      "slug": "inss-negou-o-benef-cio-veja-como-contestar-a-decis-o",
+      "data": "2026-10-27 19:52:30"
+    },
+    {
+      "tema": "FGTS digital: como usar o saldo para financiar imóvel",
+      "categoria": "FGTS",
+      "titulo": "FGTS Digital: saiba como usar o saldo na compra do imóvel",
+      "slug": "fgts-digital-saiba-como-usar-o-saldo-na-compra-do-im-vel",
+      "data": "2026-10-27 19:53:05"
+    },
+    {
+      "tema": "Férias vencidas: o que a empresa é obrigada a pagar",
+      "categoria": "Trabalho CLT",
+      "titulo": "Férias vencidas: veja quanto a empresa deve pagar a você",
+      "slug": "f-rias-vencidas-veja-quanto-a-empresa-deve-pagar-a-voc",
+      "data": "2026-10-27 19:53:35"
     }
   ]
 }
