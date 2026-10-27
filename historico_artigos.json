@@ -8,7 +8,10 @@
     "Diferença entre saque-rescisão e saque-aniversário do FGTS",
     "Como sair do saque-aniversário e voltar ao saque-rescisão",
     "13º salário: regras de pagamento e quem tem direito",
-    "Aposentadoria por invalidez: o que mudou nas regras"
+    "Aposentadoria por invalidez: o que mudou nas regras",
+    "INSS libera empréstimo consignado com novas condições",
+    "FGTS de trabalhador doméstico: como funciona",
+    "Trabalhador sem carteira assinada tem direito a férias?"
   ],
   "titulos_usados": [
     "INSS 2027: confira as novas regras para se aposentar",
@@ -19,7 +22,10 @@
     "FGTS: Saque-Aniversário x Rescisão: Veja Qual Escolher",
     "FGTS: saiba como cancelar o saque-aniversário e prazos",
     "13º salário: confira as regras e os prazos de pagamento",
-    "Aposentadoria por invalidez: confira as novas regras do INSS"
+    "Aposentadoria por invalidez: confira as novas regras do INSS",
+    "INSS muda regras do empréstimo consignado para aposentados",
+    "FGTS do doméstico: veja regras e como consultar o saldo",
+    "Trabalhador sem carteira tem direito a férias? Veja regras"
   ],
   "artigos": [
     {
@@ -84,6 +90,27 @@
       "titulo": "Aposentadoria por invalidez: confira as novas regras do INSS",
       "slug": "aposentadoria-por-invalidez-confira-as-novas-regras-do-inss",
       "data": "2026-10-26 00:32:08"
+    },
+    {
+      "tema": "INSS libera empréstimo consignado com novas condições",
+      "categoria": "INSS",
+      "titulo": "INSS muda regras do empréstimo consignado para aposentados",
+      "slug": "inss-muda-regras-do-empr-stimo-consignado-para-aposentados",
+      "data": "2026-10-27 12:46:58"
+    },
+    {
+      "tema": "FGTS de trabalhador doméstico: como funciona",
+      "categoria": "FGTS",
+      "titulo": "FGTS do doméstico: veja regras e como consultar o saldo",
+      "slug": "fgts-do-dom-stico-veja-regras-e-como-consultar-o-saldo",
+      "data": "2026-10-27 12:47:39"
+    },
+    {
+      "tema": "Trabalhador sem carteira assinada tem direito a férias?",
+      "categoria": "Trabalho CLT",
+      "titulo": "Trabalhador sem carteira tem direito a férias? Veja regras",
+      "slug": "trabalhador-sem-carteira-tem-direito-a-f-rias-veja-regras",
+      "data": "2026-10-27 12:49:15"
     }
   ]
 }
