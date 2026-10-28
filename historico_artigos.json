@@ -14,7 +14,10 @@
     "Trabalhador sem carteira assinada tem direito a férias?",
     "Como contestar um benefício negado pelo INSS",
     "FGTS digital: como usar o saldo para financiar imóvel",
-    "Férias vencidas: o que a empresa é obrigada a pagar"
+    "Férias vencidas: o que a empresa é obrigada a pagar",
+    "Aposentadoria rural: documentos exigidos pelo INSS",
+    "Demissão por justa causa: quais são os motivos previstos em lei",
+    "FGTS: calendário de liberação do saque extraordinário"
   ],
   "titulos_usados": [
     "INSS 2027: confira as novas regras para se aposentar",
@@ -31,7 +34,10 @@
     "Trabalhador sem carteira tem direito a férias? Veja regras",
     "INSS negou o benefício? Veja como contestar a decisão",
     "FGTS Digital: saiba como usar o saldo na compra do imóvel",
-    "Férias vencidas: veja quanto a empresa deve pagar a você"
+    "Férias vencidas: veja quanto a empresa deve pagar a você",
+    "Aposentadoria rural: veja a lista de documentos do INSS",
+    "Justa causa na CLT: veja as regras e os motivos de demissão",
+    "FGTS: veja o calendário de liberação do saque extraordinário"
   ],
   "artigos": [
     {
@@ -138,6 +144,27 @@
       "titulo": "Férias vencidas: veja quanto a empresa deve pagar a você",
       "slug": "f-rias-vencidas-veja-quanto-a-empresa-deve-pagar-a-voc",
       "data": "2026-10-27 19:53:35"
+    },
+    {
+      "tema": "Aposentadoria rural: documentos exigidos pelo INSS",
+      "categoria": "INSS",
+      "titulo": "Aposentadoria rural: veja a lista de documentos do INSS",
+      "slug": "aposentadoria-rural-veja-a-lista-de-documentos-do-inss",
+      "data": "2026-10-28 05:08:44"
+    },
+    {
+      "tema": "Demissão por justa causa: quais são os motivos previstos em lei",
+      "categoria": "Trabalho CLT",
+      "titulo": "Justa causa na CLT: veja as regras e os motivos de demissão",
+      "slug": "justa-causa-na-clt-veja-as-regras-e-os-motivos-de-demiss-o",
+      "data": "2026-10-28 05:09:21"
+    },
+    {
+      "tema": "FGTS: calendário de liberação do saque extraordinário",
+      "categoria": "FGTS",
+      "titulo": "FGTS: veja o calendário de liberação do saque extraordinário",
+      "slug": "fgts-veja-o-calend-rio-de-libera-o-do-saque-extraordin-rio",
+      "data": "2026-10-28 05:10:20"
     }
   ]
 }
