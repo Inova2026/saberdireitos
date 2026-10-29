@@ -20,7 +20,10 @@
     "FGTS: calendário de liberação do saque extraordinário",
     "Demissão sem justa causa: direito à multa do FGTS",
     "Trabalho remoto: direitos garantidos pela CLT",
-    "Reajuste do salário mínimo e impacto nos benefícios do INSS"
+    "Reajuste do salário mínimo e impacto nos benefícios do INSS",
+    "Calendário de pagamento do INSS do próximo mês",
+    "Golpes envolvendo o FGTS: como se proteger",
+    "Período de experiência: direitos do trabalhador na CLT"
   ],
   "titulos_usados": [
     "INSS 2027: confira as novas regras para se aposentar",
@@ -43,7 +46,10 @@
     "FGTS: veja o calendário de liberação do saque extraordinário",
     "Multa de 40% do FGTS: veja como calcular e receber o valor",
     "Trabalho remoto: confira os direitos garantidos pela CLT",
-    "Novo salário mínimo altera valor de benefícios do INSS"
+    "Novo salário mínimo altera valor de benefícios do INSS",
+    "INSS libera calendário de pagamentos do próximo mês",
+    "Golpe do FGTS: aprenda a proteger seu saldo de fraudes",
+    "Contrato de experiência: saiba quais são os seus direitos"
   ],
   "artigos": [
     {
@@ -192,6 +198,27 @@
       "titulo": "Novo salário mínimo altera valor de benefícios do INSS",
       "slug": "novo-sal-rio-m-nimo-altera-valor-de-benef-cios-do-inss",
       "data": "2026-10-28 21:20:32"
+    },
+    {
+      "tema": "Calendário de pagamento do INSS do próximo mês",
+      "categoria": "INSS",
+      "titulo": "INSS libera calendário de pagamentos do próximo mês",
+      "slug": "inss-libera-calend-rio-de-pagamentos-do-pr-ximo-m-s",
+      "data": "2026-10-29 06:38:42"
+    },
+    {
+      "tema": "Golpes envolvendo o FGTS: como se proteger",
+      "categoria": "FGTS",
+      "titulo": "Golpe do FGTS: aprenda a proteger seu saldo de fraudes",
+      "slug": "golpe-do-fgts-aprenda-a-proteger-seu-saldo-de-fraudes",
+      "data": "2026-10-29 06:39:18"
+    },
+    {
+      "tema": "Período de experiência: direitos do trabalhador na CLT",
+      "categoria": "Trabalho CLT",
+      "titulo": "Contrato de experiência: saiba quais são os seus direitos",
+      "slug": "contrato-de-experi-ncia-saiba-quais-s-o-os-seus-direitos",
+      "data": "2026-10-29 06:39:55"
     }
   ]
 }
