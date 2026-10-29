@@ -17,7 +17,10 @@
     "Férias vencidas: o que a empresa é obrigada a pagar",
     "Aposentadoria rural: documentos exigidos pelo INSS",
     "Demissão por justa causa: quais são os motivos previstos em lei",
-    "FGTS: calendário de liberação do saque extraordinário"
+    "FGTS: calendário de liberação do saque extraordinário",
+    "Demissão sem justa causa: direito à multa do FGTS",
+    "Trabalho remoto: direitos garantidos pela CLT",
+    "Reajuste do salário mínimo e impacto nos benefícios do INSS"
   ],
   "titulos_usados": [
     "INSS 2027: confira as novas regras para se aposentar",
@@ -37,7 +40,10 @@
     "Férias vencidas: veja quanto a empresa deve pagar a você",
     "Aposentadoria rural: veja a lista de documentos do INSS",
     "Justa causa na CLT: veja as regras e os motivos de demissão",
-    "FGTS: veja o calendário de liberação do saque extraordinário"
+    "FGTS: veja o calendário de liberação do saque extraordinário",
+    "Multa de 40% do FGTS: veja como calcular e receber o valor",
+    "Trabalho remoto: confira os direitos garantidos pela CLT",
+    "Novo salário mínimo altera valor de benefícios do INSS"
   ],
   "artigos": [
     {
@@ -165,6 +171,27 @@
       "titulo": "FGTS: veja o calendário de liberação do saque extraordinário",
       "slug": "fgts-veja-o-calend-rio-de-libera-o-do-saque-extraordin-rio",
       "data": "2026-10-28 05:10:20"
+    },
+    {
+      "tema": "Demissão sem justa causa: direito à multa do FGTS",
+      "categoria": "FGTS",
+      "titulo": "Multa de 40% do FGTS: veja como calcular e receber o valor",
+      "slug": "multa-de-40-do-fgts-veja-como-calcular-e-receber-o-valor",
+      "data": "2026-10-28 21:19:16"
+    },
+    {
+      "tema": "Trabalho remoto: direitos garantidos pela CLT",
+      "categoria": "Trabalho CLT",
+      "titulo": "Trabalho remoto: confira os direitos garantidos pela CLT",
+      "slug": "trabalho-remoto-confira-os-direitos-garantidos-pela-clt",
+      "data": "2026-10-28 21:19:53"
+    },
+    {
+      "tema": "Reajuste do salário mínimo e impacto nos benefícios do INSS",
+      "categoria": "INSS",
+      "titulo": "Novo salário mínimo altera valor de benefícios do INSS",
+      "slug": "novo-sal-rio-m-nimo-altera-valor-de-benef-cios-do-inss",
+      "data": "2026-10-28 21:20:32"
     }
   ]
 }
