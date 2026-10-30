@@ -26,7 +26,10 @@
     "Período de experiência: direitos do trabalhador na CLT",
     "INSS digital: quais serviços já não precisam de agência",
     "Como consultar o saldo do FGTS pelo aplicativo",
-    "Acordo de trabalho intermitente: como funciona na prática"
+    "Acordo de trabalho intermitente: como funciona na prática",
+    "Rendimento do FGTS: quanto rende por ano",
+    "Pensão por morte: novas regras de cálculo do INSS",
+    "Vale-transporte: obrigatoriedade e regras de desconto"
   ],
   "titulos_usados": [
     "INSS 2027: confira as novas regras para se aposentar",
@@ -55,7 +58,10 @@
     "Contrato de experiência: saiba quais são os seus direitos",
     "INSS Digital: veja os serviços que dispensam ida à agência",
     "Saldo do FGTS: veja como consultar o valor pelo aplicativo",
-    "Trabalho intermitente: veja regras e direitos na CLT"
+    "Trabalho intermitente: veja regras e direitos na CLT",
+    "Rendimento do FGTS: veja quanto seu dinheiro rende ao ano",
+    "Pensão por morte do INSS: veja como funciona o novo cálculo",
+    "Vale-transporte CLT: confira regras e limite de desconto"
   ],
   "artigos": [
     {
@@ -246,6 +252,27 @@
       "titulo": "Trabalho intermitente: veja regras e direitos na CLT",
       "slug": "trabalho-intermitente-veja-regras-e-direitos-na-clt",
       "data": "2026-10-29 21:22:10"
+    },
+    {
+      "tema": "Rendimento do FGTS: quanto rende por ano",
+      "categoria": "FGTS",
+      "titulo": "Rendimento do FGTS: veja quanto seu dinheiro rende ao ano",
+      "slug": "rendimento-do-fgts-veja-quanto-seu-dinheiro-rende-ao-ano",
+      "data": "2026-10-30 08:21:37"
+    },
+    {
+      "tema": "Pensão por morte: novas regras de cálculo do INSS",
+      "categoria": "INSS",
+      "titulo": "Pensão por morte do INSS: veja como funciona o novo cálculo",
+      "slug": "pens-o-por-morte-do-inss-veja-como-funciona-o-novo-c-lculo",
+      "data": "2026-10-30 08:22:13"
+    },
+    {
+      "tema": "Vale-transporte: obrigatoriedade e regras de desconto",
+      "categoria": "Trabalho CLT",
+      "titulo": "Vale-transporte CLT: confira regras e limite de desconto",
+      "slug": "vale-transporte-clt-confira-regras-e-limite-de-desconto",
+      "data": "2026-10-30 08:22:47"
     }
   ]
 }
