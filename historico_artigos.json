@@ -23,7 +23,10 @@
     "Reajuste do salário mínimo e impacto nos benefícios do INSS",
     "Calendário de pagamento do INSS do próximo mês",
     "Golpes envolvendo o FGTS: como se proteger",
-    "Período de experiência: direitos do trabalhador na CLT"
+    "Período de experiência: direitos do trabalhador na CLT",
+    "INSS digital: quais serviços já não precisam de agência",
+    "Como consultar o saldo do FGTS pelo aplicativo",
+    "Acordo de trabalho intermitente: como funciona na prática"
   ],
   "titulos_usados": [
     "INSS 2027: confira as novas regras para se aposentar",
@@ -49,7 +52,10 @@
     "Novo salário mínimo altera valor de benefícios do INSS",
     "INSS libera calendário de pagamentos do próximo mês",
     "Golpe do FGTS: aprenda a proteger seu saldo de fraudes",
-    "Contrato de experiência: saiba quais são os seus direitos"
+    "Contrato de experiência: saiba quais são os seus direitos",
+    "INSS Digital: veja os serviços que dispensam ida à agência",
+    "Saldo do FGTS: veja como consultar o valor pelo aplicativo",
+    "Trabalho intermitente: veja regras e direitos na CLT"
   ],
   "artigos": [
     {
@@ -219,6 +225,27 @@
       "titulo": "Contrato de experiência: saiba quais são os seus direitos",
       "slug": "contrato-de-experi-ncia-saiba-quais-s-o-os-seus-direitos",
       "data": "2026-10-29 06:39:55"
+    },
+    {
+      "tema": "INSS digital: quais serviços já não precisam de agência",
+      "categoria": "INSS",
+      "titulo": "INSS Digital: veja os serviços que dispensam ida à agência",
+      "slug": "inss-digital-veja-os-servi-os-que-dispensam-ida-ag-ncia",
+      "data": "2026-10-29 21:20:38"
+    },
+    {
+      "tema": "Como consultar o saldo do FGTS pelo aplicativo",
+      "categoria": "FGTS",
+      "titulo": "Saldo do FGTS: veja como consultar o valor pelo aplicativo",
+      "slug": "saldo-do-fgts-veja-como-consultar-o-valor-pelo-aplicativo",
+      "data": "2026-10-29 21:21:34"
+    },
+    {
+      "tema": "Acordo de trabalho intermitente: como funciona na prática",
+      "categoria": "Trabalho CLT",
+      "titulo": "Trabalho intermitente: veja regras e direitos na CLT",
+      "slug": "trabalho-intermitente-veja-regras-e-direitos-na-clt",
+      "data": "2026-10-29 21:22:10"
     }
   ]
 }
