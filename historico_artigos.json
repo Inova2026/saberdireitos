@@ -38,7 +38,9 @@
     "FGTS para quitar financiamento habitacional: passo a passo",
     "Como funciona a revisão da vida toda do INSS",
     "Governo anuncia mudanças no teto do seguro-desemprego",
-    "Pente-fino do INSS: quem pode perder o benefício"
+    "Pente-fino do INSS: quem pode perder o benefício",
+    "Auxílio-doença: como solicitar pelo Meu INSS",
+    "Hora extra: como calcular corretamente segundo a CLT"
   ],
   "titulos_usados": [
     "INSS 2027: confira as novas regras para se aposentar",
@@ -79,7 +81,9 @@
     "Usar o FGTS para amortizar imóvel: veja o passo a passo",
     "Revisão da vida toda do INSS: entenda a regra e direitos",
     "Novo teto do seguro-desemprego: veja o valor atualizado",
-    "Pente-fino do INSS: veja quem pode ter benefício cortado"
+    "Pente-fino do INSS: veja quem pode ter benefício cortado",
+    "Auxílio-doença sem fila: veja como pedir pelo Meu INSS",
+    "Hora extra na CLT: aprenda a calcular o valor correto"
   ],
   "artigos": [
     {
@@ -354,6 +358,20 @@
       "titulo": "Pente-fino do INSS: veja quem pode ter benefício cortado",
       "slug": "pente-fino-do-inss-veja-quem-pode-ter-benef-cio-cortado",
       "data": "2026-10-31 18:44:32"
+    },
+    {
+      "tema": "Auxílio-doença: como solicitar pelo Meu INSS",
+      "categoria": "INSS",
+      "titulo": "Auxílio-doença sem fila: veja como pedir pelo Meu INSS",
+      "slug": "aux-lio-doen-a-sem-fila-veja-como-pedir-pelo-meu-inss",
+      "data": "2026-11-01 08:59:50"
+    },
+    {
+      "tema": "Hora extra: como calcular corretamente segundo a CLT",
+      "categoria": "Trabalho CLT",
+      "titulo": "Hora extra na CLT: aprenda a calcular o valor correto",
+      "slug": "hora-extra-na-clt-aprenda-a-calcular-o-valor-correto",
+      "data": "2026-11-01 09:00:21"
     }
   ]
 }
