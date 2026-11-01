@@ -29,7 +29,16 @@
     "Acordo de trabalho intermitente: como funciona na prática",
     "Rendimento do FGTS: quanto rende por ano",
     "Pensão por morte: novas regras de cálculo do INSS",
-    "Vale-transporte: obrigatoriedade e regras de desconto"
+    "Vale-transporte: obrigatoriedade e regras de desconto",
+    "Aposentadoria por tempo de contribuição: regras de transição",
+    "Rescisão indireta: quando o trabalhador pode pedir",
+    "Quem pode sacar o FGTS em caso de doença grave",
+    "Banco de horas: regras atualizadas da CLT",
+    "BPC-LOAS: regras atualizadas de quem tem direito",
+    "FGTS para quitar financiamento habitacional: passo a passo",
+    "Como funciona a revisão da vida toda do INSS",
+    "Governo anuncia mudanças no teto do seguro-desemprego",
+    "Pente-fino do INSS: quem pode perder o benefício"
   ],
   "titulos_usados": [
     "INSS 2027: confira as novas regras para se aposentar",
@@ -61,7 +70,16 @@
     "Trabalho intermitente: veja regras e direitos na CLT",
     "Rendimento do FGTS: veja quanto seu dinheiro rende ao ano",
     "Pensão por morte do INSS: veja como funciona o novo cálculo",
-    "Vale-transporte CLT: confira regras e limite de desconto"
+    "Vale-transporte CLT: confira regras e limite de desconto",
+    "Regras de transição do INSS: veja como se aposentar",
+    "Rescisão indireta: veja quando dar justa causa no patrão",
+    "Saque do FGTS por doença grave: veja quem tem direito",
+    "Banco de horas na CLT: veja regras atualizadas e prazos",
+    "BPC LOAS: confira quem tem direito e as regras atualizadas",
+    "Usar o FGTS para amortizar imóvel: veja o passo a passo",
+    "Revisão da vida toda do INSS: entenda a regra e direitos",
+    "Novo teto do seguro-desemprego: veja o valor atualizado",
+    "Pente-fino do INSS: veja quem pode ter benefício cortado"
   ],
   "artigos": [
     {
@@ -273,6 +291,69 @@
       "titulo": "Vale-transporte CLT: confira regras e limite de desconto",
       "slug": "vale-transporte-clt-confira-regras-e-limite-de-desconto",
       "data": "2026-10-30 08:22:47"
+    },
+    {
+      "tema": "Aposentadoria por tempo de contribuição: regras de transição",
+      "categoria": "INSS",
+      "titulo": "Regras de transição do INSS: veja como se aposentar",
+      "slug": "regras-de-transi-o-do-inss-veja-como-se-aposentar",
+      "data": "2026-10-30 20:21:39"
+    },
+    {
+      "tema": "Rescisão indireta: quando o trabalhador pode pedir",
+      "categoria": "Trabalho CLT",
+      "titulo": "Rescisão indireta: veja quando dar justa causa no patrão",
+      "slug": "rescis-o-indireta-veja-quando-dar-justa-causa-no-patr-o",
+      "data": "2026-10-30 20:22:16"
+    },
+    {
+      "tema": "Quem pode sacar o FGTS em caso de doença grave",
+      "categoria": "FGTS",
+      "titulo": "Saque do FGTS por doença grave: veja quem tem direito",
+      "slug": "saque-do-fgts-por-doen-a-grave-veja-quem-tem-direito",
+      "data": "2026-10-30 20:23:23"
+    },
+    {
+      "tema": "Banco de horas: regras atualizadas da CLT",
+      "categoria": "Trabalho CLT",
+      "titulo": "Banco de horas na CLT: veja regras atualizadas e prazos",
+      "slug": "banco-de-horas-na-clt-veja-regras-atualizadas-e-prazos",
+      "data": "2026-10-31 13:27:00"
+    },
+    {
+      "tema": "BPC-LOAS: regras atualizadas de quem tem direito",
+      "categoria": "INSS",
+      "titulo": "BPC LOAS: confira quem tem direito e as regras atualizadas",
+      "slug": "bpc-loas-confira-quem-tem-direito-e-as-regras-atualizadas",
+      "data": "2026-10-31 13:28:14"
+    },
+    {
+      "tema": "FGTS para quitar financiamento habitacional: passo a passo",
+      "categoria": "FGTS",
+      "titulo": "Usar o FGTS para amortizar imóvel: veja o passo a passo",
+      "slug": "usar-o-fgts-para-amortizar-im-vel-veja-o-passo-a-passo",
+      "data": "2026-10-31 13:28:51"
+    },
+    {
+      "tema": "Como funciona a revisão da vida toda do INSS",
+      "categoria": "INSS",
+      "titulo": "Revisão da vida toda do INSS: entenda a regra e direitos",
+      "slug": "revis-o-da-vida-toda-do-inss-entenda-a-regra-e-direitos",
+      "data": "2026-10-31 18:43:16"
+    },
+    {
+      "tema": "Governo anuncia mudanças no teto do seguro-desemprego",
+      "categoria": "Trabalho CLT",
+      "titulo": "Novo teto do seguro-desemprego: veja o valor atualizado",
+      "slug": "novo-teto-do-seguro-desemprego-veja-o-valor-atualizado",
+      "data": "2026-10-31 18:43:54"
+    },
+    {
+      "tema": "Pente-fino do INSS: quem pode perder o benefício",
+      "categoria": "INSS",
+      "titulo": "Pente-fino do INSS: veja quem pode ter benefício cortado",
+      "slug": "pente-fino-do-inss-veja-quem-pode-ter-benef-cio-cortado",
+      "data": "2026-10-31 18:44:32"
     }
   ]
 }
